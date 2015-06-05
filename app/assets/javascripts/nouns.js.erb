@@ -1,0 +1,25 @@
+// Place all the behaviors and hooks related to the matching controller here.
+// All this logic will automatically be available in application.js.
+
+
+$(document).ready(function(){
+  function random(items1, items2){
+    var item1 = items1[Math.floor(Math.random()*items1.length)];
+    var item2 = items2[Math.floor(Math.random()*items2.length)];
+    var pic_num = Math.floor(Math.random()*4);
+    $("#noun1").text(item1)
+    $("#noun2").text(item2)
+    // $("picture").append ???????
+    }
+
+    $("#sustain").on("click", function(evt){ evt.preventDefault();
+      random(nouns1, nouns2);
+    })
+  })
+
+
+var nouns1 = ['bottlecaps', 'bottles', 'cups', 'straws', 'lids', 'plastic bags', 'cardboard', 'receipts']
+
+var nouns2 = ['bench', 'chair', 'toilet', 'dresser', 'shirt', 'desk', 'shelf']
+
+// var pix = ["1.jpg", ]

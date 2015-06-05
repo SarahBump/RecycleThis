@@ -1,0 +1,12 @@
+<a href="/nouns">Home</a>
+
+<h3>Welcome to <%= @noun.name %></h3>
+
+
+<% form_tag("/nouns/#{@noun.id}/edit", method: :get) do %>
+  <%= submit_tag "Edit" %>
+<% end %>
+
+<% form_tag("/nouns/#{@noun.id}", method: :delete) do %>
+  <%= submit_tag "Delete" %>
+<% end %>
