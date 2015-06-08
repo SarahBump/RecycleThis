@@ -13,3 +13,43 @@
  *= require_tree .
  *= require_self
  */
+
+#wrapper {
+
+  background-image: url('trees2.jpg');
+  background-position: stretch;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 650px
+}
+
+h1 {
+  margin: 5px;
+  font-size: 250%;
+}
+
+#words {
+  text-align: center;
+  font-family: Lobster;
+  padding-top: 100px;
+}
+
+#box {
+  background-color: white;
+  width: 60%;
+  margin:  auto;
+  opacity: .8;
+  position: relative;
+  top: 30%;
+  border-radius: 10px;
+}
+
+#sustain{
+  color: white;
+  margin: 10px;
+  background-color: black;
+  width: 100px;
+  height: 40px;
+  font-family: Lobster;
+  font-size: 18px;
+}
